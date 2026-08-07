@@ -1,0 +1,7 @@
+Atlas Time map imagery
+
+Day: NASA Earth Observatory; monthly Blue Marble Next Generation topography and bathymetry imagery produced by Reto Stöckli, NASA Earth Observatory.
+
+Night: NASA Earth Observatory images by Joshua Stevens, using Suomi NPP VIIRS data from Miguel Román, NASA GSFC.
+
+Atlas Time crops, resizes, and color-grades the source imagery. NASA does not endorse Atlas Time. No NASA marks are used.

@@ -1,0 +1,141 @@
+{
+  "canonical_origin": "https://atlastime.howardpatty.com",
+  "files": [
+    {
+      "bytes": 740,
+      "path": ".github/workflows/deploy-pages.yml",
+      "sha256": "482b88da3024edee0d8bfe00413a39efa1935af3737f4a45f9fa896d99ddf837"
+    },
+    {
+      "bytes": 0,
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2544,
+      "path": "404.html",
+      "sha256": "aa2703fbb03a1d0127b3ae7168c830f5bb2a0d3a1da2fac6a190a5bdf60de323"
+    },
+    {
+      "bytes": 27,
+      "path": "CNAME",
+      "sha256": "a262ff2d6676e6f98d8d1c53cd4b296b200fee4c4daeac6d60dc5836261a2fef"
+    },
+    {
+      "bytes": 12064,
+      "path": "about/index.html",
+      "sha256": "7b4b61589362ba7a62eeaf0dba15194a88508008e4e103cff22e3905eee523d3"
+    },
+    {
+      "bytes": 19772,
+      "path": "assets/brand/AtlasTimeLogo-Dark.svg",
+      "sha256": "c9063f8f0ceae484c62f07d61266e148c367833e0c498242d939c7090bf818c5"
+    },
+    {
+      "bytes": 19772,
+      "path": "assets/brand/AtlasTimeLogo-Light.svg",
+      "sha256": "f49c94d4c142fd5b43f15fe588af26bab1a5d0a1e13f188c65f06106418297d0"
+    },
+    {
+      "bytes": 8153,
+      "path": "assets/brand/AtlasTimeWordmark-Dark.svg",
+      "sha256": "98f0eb6e904e8ef3ca16c44bc9acf73fc367a51fb9429c0381ff9b3ea302d549"
+    },
+    {
+      "bytes": 8153,
+      "path": "assets/brand/AtlasTimeWordmark-Light.svg",
+      "sha256": "60f6f03586d25f8d49bd394f5d6d921bec61213f2e6cdb20e8c5ff499d22804b"
+    },
+    {
+      "bytes": 487,
+      "path": "assets/favicon.svg",
+      "sha256": "c3f9f9068792a393eebf242bda5330664085fc23d458b64a28abd0b504982ba7"
+    },
+    {
+      "bytes": 6794,
+      "path": "assets/hero.js",
+      "sha256": "2829c603097ae81da017911c2105d301a5a5af6b4f6f547947904ab9f65dcea0"
+    },
+    {
+      "bytes": 343,
+      "path": "assets/icons/tip-choose-date.svg",
+      "sha256": "65e5819d2ca4975024da3e0927f9eca038871ee07c42df272ce9f8be4ee2f8b5"
+    },
+    {
+      "bytes": 270,
+      "path": "assets/icons/tip-landscape.svg",
+      "sha256": "c74cb010efa2477c35cba79eea42ecf3e84a0c1b9bbe8315a069399b1a305b1c"
+    },
+    {
+      "bytes": 229,
+      "path": "assets/icons/tip-manage-city-list.svg",
+      "sha256": "4ec0fbd5f259959ff8b6a2e2f8d5774489453e10aedb88251ddbe2be0ac32938"
+    },
+    {
+      "bytes": 327,
+      "path": "assets/icons/tip-map-daylight.svg",
+      "sha256": "0588b6076fb1f65991a99767d889859251055a72f393f1ea55424b0af8e43070"
+    },
+    {
+      "bytes": 633,
+      "path": "assets/icons/tip-move-through-time.svg",
+      "sha256": "7328313b52769aa5b9a6d3ed6349d5372518ee0edf74475520365d54df3a1eb4"
+    },
+    {
+      "bytes": 360,
+      "path": "assets/icons/tip-return-to-live.svg",
+      "sha256": "ba942f0e4ecaa045c119d0cadb5a73c4607df6c17d1cbd2a35eeacca81d48fd0"
+    },
+    {
+      "bytes": 412,
+      "path": "assets/map/MAP_ATTRIBUTIONS.txt",
+      "sha256": "94ceb53bddad003f0c59a6a71ed933bc6b7a2ff689b840e464f9b4924db47709"
+    },
+    {
+      "bytes": 638781,
+      "path": "assets/map/earth-day.jpg",
+      "sha256": "7d4ba2f891731a9c427b58052a3dc349b911d44842aab8527698c30132a77ae8"
+    },
+    {
+      "bytes": 269222,
+      "path": "assets/map/earth-night.jpg",
+      "sha256": "0f2c407ef686a648be2f6909093c50fd7ca54db1db58524835dfbc0988c2be9e"
+    },
+    {
+      "bytes": 22574,
+      "path": "assets/styles.css",
+      "sha256": "42951c45191a2b181794ea34ccc11fe8ade932239c8669a95a1aba11368571c7"
+    },
+    {
+      "bytes": 7751,
+      "path": "index.html",
+      "sha256": "dced8a0b636a7bef7a046748fafc3009841a5e3183501c9ee333de1d15b9d619"
+    },
+    {
+      "bytes": 3789,
+      "path": "privacy/index.html",
+      "sha256": "77f662e972bcd5aed2b0a589263d171bb38fb38e497264dd1bbb882739b8c39b"
+    },
+    {
+      "bytes": 78,
+      "path": "robots.txt",
+      "sha256": "3c424a9b71dcf24f8581564c81f6784154b371bf839fd0fe635cf49ae1bef811"
+    },
+    {
+      "bytes": 433,
+      "path": "sitemap.xml",
+      "sha256": "576d0540ca6d78bb5cf8b56dea017105f45951702166808af7f34d67c3ffd6e3"
+    },
+    {
+      "bytes": 3916,
+      "path": "support/index.html",
+      "sha256": "0aa04ca89e71158619f62b40e0692ab3a02d82f96410054a78b62e03ab0c63e4"
+    },
+    {
+      "bytes": 6145,
+      "path": "terms/index.html",
+      "sha256": "6d78898b3bee90d728d412d7602749affd6ac0c87fa0be69536c0a16e3a1fe32"
+    }
+  ],
+  "schema_version": 1
+}

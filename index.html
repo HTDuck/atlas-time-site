@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Atlas Time is a visual world clock for iPhone and iPad. Follow daylight, explore seasonal light, and keep the places that matter in view.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#07131f">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Atlas Time">
+  <meta property="og:title" content="Atlas Time — See time move across the world">
+  <meta property="og:description" content="Atlas Time is a visual world clock for iPhone and iPad. Follow daylight, explore seasonal light, and keep the places that matter in view.">
+  <meta property="og:url" content="https://atlastime.howardpatty.com/">
+  <link rel="canonical" href="https://atlastime.howardpatty.com/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="preload" href="/assets/brand/AtlasTimeLogo-Dark.svg" as="image" type="image/svg+xml">
+<link rel="preload" href="/assets/map/earth-day.jpg" as="image">
+  <title>Atlas Time — See time move across the world</title>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="Atlas Time home">
+        <img class="header-logo" src="/assets/brand/AtlasTimeWordmark-Dark.svg" alt="">
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="/" aria-current="page">Home</a>
+<a href="/about/">About</a>
+<a href="/support/">Support</a>
+<a href="/privacy/">Privacy</a>
+<a href="/terms/">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-shell">
+  <div class="hero-copy">
+    <div class="hero-identity">
+      <picture class="hero-logo">
+        <source media="print" srcset="/assets/brand/AtlasTimeLogo-Light.svg">
+        <img src="/assets/brand/AtlasTimeLogo-Dark.svg" alt="Atlas Time. See time move around the world.">
+      </picture>
+      <p class="eyebrow">Visual world clock for iPhone and iPad</p>
+    </div>
+    <div class="hero-pitch">
+      <div class="hero-actions" aria-label="Atlas Time availability">
+        <span class="button button-primary" aria-label="Atlas Time is coming to the App Store">Coming to the App Store</span>
+      </div>
+      <ul class="promise-list" aria-label="Purchase and privacy highlights">
+        <li>One purchase</li>
+        <li>No subscription</li>
+        <li>No account</li>
+        <li>No ads</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="map-feature" data-solar-map data-cycle-seconds="42" data-day-image="/assets/map/earth-day.jpg" data-night-image="/assets/map/earth-night.jpg">
+    <div class="map-heading">
+      <div>
+        <span class="live-indicator"><span aria-hidden="true"></span> A day in motion</span>
+      </div>
+      <time class="map-reference" data-reference-time datetime="2026-06-21T00:00:00Z">00:00 UTC</time>
+    </div>
+
+    <div class="earth-frame">
+      <img class="map-fallback map-fallback-day" src="/assets/map/earth-day.jpg" alt="">
+      <img class="map-fallback map-fallback-night" src="/assets/map/earth-night.jpg" alt="">
+      <canvas class="earth-canvas" role="img" aria-label="A compressed twenty-four-hour view of sunlight and darkness moving across Earth, with beacons for New York, London, and Singapore."></canvas>
+      <div class="map-vignette" aria-hidden="true"></div>
+
+      <div class="beacon beacon-new-york" style="--x: 29.45%; --y: 27.39%;">
+        <span class="beacon-ring" aria-hidden="true"><span></span></span>
+        <span class="beacon-label">New York</span>
+      </div>
+      <div class="beacon beacon-london" style="--x: 49.97%; --y: 21.39%;">
+        <span class="beacon-ring" aria-hidden="true"><span></span></span>
+        <span class="beacon-label">London</span>
+      </div>
+      <div class="beacon beacon-singapore" style="--x: 78.84%; --y: 49.25%;">
+        <span class="beacon-ring" aria-hidden="true"><span></span></span>
+        <span class="beacon-label">Singapore</span>
+      </div>
+    </div>
+
+    <div class="city-strip" aria-label="Local times in the featured cities">
+      <article class="city-readout">
+        <div><span class="city-beacon-dot" aria-hidden="true"></span><h2>New York</h2></div>
+        <time data-city-time data-time-zone="America/New_York" datetime="2026-06-20T20:00:00-04:00">8:00 PM</time>
+        <p>Eastern Time</p>
+      </article>
+      <article class="city-readout city-readout-focused">
+        <div><span class="city-beacon-dot" aria-hidden="true"></span><h2>London</h2></div>
+        <time data-city-time data-time-zone="Europe/London" datetime="2026-06-21T01:00:00+01:00">1:00 AM</time>
+        <p>United Kingdom Time</p>
+      </article>
+      <article class="city-readout">
+        <div><span class="city-beacon-dot" aria-hidden="true"></span><h2>Singapore</h2></div>
+        <time data-city-time data-time-zone="Asia/Singapore" datetime="2026-06-21T08:00:00+08:00">8:00 AM</time>
+        <p>Singapore Time</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="tips-section section-shell" id="how-it-works" aria-labelledby="how-it-works-heading">
+  <div class="section-intro">
+    <p class="eyebrow">How it works</p>
+    <h2 id="how-it-works-heading">The map is the clock.</h2>
+  </div>
+  <div class="tips-grid">
+    <article class="tip-card"><img class="tip-icon" src="/assets/icons/tip-map-daylight.svg" alt=""><h3>Map daylight across the world</h3><p>As Earth rotates, sunlight sweeps across its curved surface. The day–night terminator traces where day meets night.</p></article>
+    <article class="tip-card"><img class="tip-icon" src="/assets/icons/tip-move-through-time.svg" alt=""><h3>Explore time and geography</h3><p>One finger swipe moves through time. Pinch to zoom then drag with two fingers to explore the map.</p></article>
+    <article class="tip-card"><img class="tip-icon" src="/assets/icons/tip-choose-date.svg" alt=""><h3>Choose any date</h3><p>Tap Reference Time to choose a date and time.</p></article>
+    <article class="tip-card"><img class="tip-icon" src="/assets/icons/tip-return-to-live.svg" alt=""><h3>Return to Live</h3><p>Tap Return to Live to resume the current time.</p></article>
+    <article class="tip-card"><img class="tip-icon" src="/assets/icons/tip-landscape.svg" alt=""><h3>Use landscape</h3><p>Rotate for a wider map with the city list at the side. Show or hide it with the city-list control.</p></article>
+    <article class="tip-card"><img class="tip-icon" src="/assets/icons/tip-manage-city-list.svg" alt=""><h3>Manage city list</h3><p>Tap Add City to search for a city. Swipe left to delete, tap to focus its beacon, or long-press and drag to reorder.</p></article>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+  <div>
+    <a class="footer-brand" href="/" aria-label="Atlas Time home">
+      <picture>
+        <source media="print" srcset="/assets/brand/AtlasTimeWordmark-Light.svg">
+        <img src="/assets/brand/AtlasTimeWordmark-Dark.svg" alt="">
+      </picture>
+    </a>
+    <p>A visual world clock for iPhone and iPad, designed and developed by Howard Patty.</p>
+  </div>
+  <nav aria-label="Sitemap">
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/support/">Support</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/terms/">Terms</a>
+  </nav>
+  <p class="copyright">© 2026 Howard Patty</p>
+</div>
+  </footer>
+  <script src="/assets/hero.js" defer></script>
+</body>
+</html>
