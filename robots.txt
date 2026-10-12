@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atlastime.howardpatty.com/sitemap.xml

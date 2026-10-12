@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The story behind Atlas Time, including its offline city catalog, civil-time correctness, and calculated day–night map.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#07131f">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Atlas Time">
+  <meta property="og:title" content="About — Atlas Time">
+  <meta property="og:description" content="The story behind Atlas Time, including its offline city catalog, civil-time correctness, and calculated day–night map.">
+  <meta property="og:url" content="https://atlastime.howardpatty.com/about/">
+  <link rel="canonical" href="https://atlastime.howardpatty.com/about/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  
+  <title>About — Atlas Time</title>
+</head>
+<body data-page="about">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="Atlas Time home">
+        <img class="header-logo" src="/assets/brand/AtlasTimeWordmark-Dark.svg" alt="">
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="/">Home</a>
+<a href="/about/" aria-current="page">About</a>
+<a href="/support/">Support</a>
+<a href="/privacy/">Privacy</a>
+<a href="/terms/">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="page-hero section-shell">
+  <h1 class="eyebrow page-eyebrow-heading">About Atlas Time</h1>
+  <p>Atlas Time keeps the world in view. Daylight, darkness, date and time change together with a few simple gestures</p>
+</header>
+
+<section class="inside-section section-shell" aria-labelledby="one-shared-moment-heading">
+  <div class="section-intro">
+    <p class="eyebrow">Inside Atlas Time</p>
+    <h2 id="one-shared-moment-heading">One shared moment.</h2>
+    <p>Move the clock forward or backward to compare local time, date, and daylight across cities at the same moment. The map and city clocks update together, providing a visual reference to help coordinate a business meeting or find the right time to call a loved one while traveling.</p>
+  </div>
+</section>
+
+<section class="imagery-section section-shell" aria-labelledby="earth-imagery-heading">
+  <div class="section-intro">
+    <p class="eyebrow">Offline maps</p>
+    <h2 id="earth-imagery-heading">Earth imagery.</h2>
+  </div>
+
+  <div class="imagery-copy">
+    <p>Atlas Time includes media published by NASA Earth Observatory.* The app cycles through the seasonal daylight images and reveals the nighttime image on the dark side of the calculated day-night terminator. The terminator is calculated separately and is not part of the source images.</p>
+    <p>Image credits: <a href="https://earthobservatory.nasa.gov/" target="_blank" rel="noopener noreferrer">NASA Earth Observatory</a>.* Blue Marble Next Generation (2005) by Reto Stöckli et al.; Black Marble 2016 by Joshua Stevens, using Suomi NPP VIIRS data from Miguel Román, NASA GSFC.</p>
+    <p class="imagery-disclaimer">*NASA does not endorse Atlas Time, and no affiliation is implied.</p>
+  </div>
+</section>
+
+<section class="solar-method-section section-shell" aria-labelledby="calculated-daylight-heading">
+  <div class="section-intro">
+    <p class="eyebrow">Calculated daylight</p>
+    <h2 id="calculated-daylight-heading">The line between day and night</h2>
+  </div>
+
+  <div class="solar-method-grid">
+    <div class="method-copy">
+      <p>The subsolar point is the location on Earth where the Sun is directly overhead at a specific date and time. Atlas Time calculates this point for the selected moment. Its latitude is the solar declination, which shifts north and south over the course of the year. Its longitude is calculated from Coordinated Universal Time (UTC), with an adjustment for the difference between apparent solar time and mean solar time, and moves west as Earth rotates.</p>
+      <p>Using the subsolar point, Atlas Time evaluates locations across the map to determine whether the Sun’s geometric center is above or below the local horizon. Locations with the Sun above the horizon are shown in daylight; locations with it below the horizon reveal the nighttime imagery.</p>
+      <p>The day–night terminator is formed by the points where the Sun’s center is on the geometric horizon. One side of the boundary marks geometric sunrise, while the other marks geometric sunset. On a globe, the terminator forms a circle. On a rectangular map projection, it appears as a curve. The selected time moves this curve east or west across the map, while Earth’s axial tilt changes its shape throughout the year.</p>
+    </div>
+
+    <figure class="equation-panel">
+      <figcaption>
+        <h3>How Atlas Time classifies each point</h3>
+        <p>For a point at latitude <var>φ</var>, the Sun’s geometric altitude <var>h</var> is determined by solar declination <var>δ</var> and solar hour angle <var>H</var>:</p>
+      </figcaption>
+      <p class="solar-equation" role="img" aria-label="sine of h equals sine of phi times sine of delta, plus cosine of phi times cosine of delta times cosine of H">
+        <span class="equation-left">sin(<var>h</var>) =</span>
+        <span class="equation-right">(sin(<var>φ</var>) sin(<var>δ</var>))</span>
+        <span class="equation-continuation">+ (cos(<var>φ</var>) cos(<var>δ</var>) cos(<var>H</var>))</span>
+      </p>
+      <dl class="equation-key equation-key--expanded">
+        <div><dt><var>φ</var> (phi)</dt><dd>The latitude of the point being evaluated.</dd></div>
+        <div><dt><var>δ</var> (delta)</dt><dd>Solar declination: the Sun’s seasonal position north or south of the equator. It changes gradually throughout the year.</dd></div>
+        <div><dt><var>H</var></dt><dd>Solar hour angle: the point’s angular distance from local apparent solar noon. It incorporates the selected UTC time, the point’s longitude, and the equation-of-time adjustment. <var>H</var> is 0° at local apparent solar noon and changes by approximately 15° per solar hour.</dd></div>
+        <div><dt><var>h</var></dt><dd>The geometric altitude of the Sun’s center relative to the local horizon.</dd></div>
+      </dl>
+    </figure>
+  </div>
+
+  <div class="solar-explanation-grid">
+    <section aria-labelledby="where-time-appears-heading">
+      <h3 id="where-time-appears-heading">Where time appears</h3>
+      <p>The equation does not contain a separate time variable because the selected date and time have already been incorporated into <var>δ</var> and <var>H</var>. The selected date determines the Sun’s seasonal position through <var>δ</var>. The selected UTC time, each point’s longitude, and the equation of time determine <var>H</var>, which changes continuously as Earth rotates.</p>
+    </section>
+    <section aria-labelledby="how-result-is-used-heading">
+      <h3 id="how-result-is-used-heading">How the result is used</h3>
+      <dl class="solar-result-list">
+        <div><dt><var>h</var> &gt; 0°</dt><dd>The Sun is above the horizon: daylight.</dd></div>
+        <div><dt><var>h</var> = 0°</dt><dd>The Sun’s center is on the geometric horizon: the day–night terminator.</dd></div>
+        <div><dt><var>h</var> &lt; 0°</dt><dd>The Sun is below the horizon: darkness.</dd></div>
+      </dl>
+    </section>
+  </div>
+
+  <div class="method-detail">
+    <p>The soft edge around the boundary is a visual treatment centered on the calculated terminator. It does not represent a measured physical twilight band.</p>
+    <p>Sunrise and sunset times on city cards are calculated separately using the apparent horizon, including standard approximations for atmospheric refraction and the apparent radius of the Sun’s disk. After sunset, the card continues to display the sunset time through civil twilight, which ends when the Sun’s center reaches 6° below the horizon.</p>
+  </div>
+
+  <aside class="source-note" aria-label="Solar calculation sources">
+    <h3>Calculation sources</h3>
+    <p>Atlas Time calculates solar declination and the equation of time using the fractional-year equations published by <a href="https://gml.noaa.gov/grad/solcalc/solareqns.PDF">NOAA’s Global Monitoring Laboratory</a>. <a href="https://gml.noaa.gov/grad/solcalc/calcdetails.html">NOAA’s calculation notes</a> trace these methods to Jean Meeus’s <cite>Astronomical Algorithms</cite>. Atlas Time’s map-scale results are tested against <a href="https://aa.usno.navy.mil/data/">U.S. Naval Observatory astronomical data</a>.</p>
+  </aside>
+</section>
+
+<section class="civil-time-section section-shell" aria-labelledby="civil-time-heading">
+  <div class="section-intro">
+    <p class="eyebrow">Civil time</p>
+    <h2 id="civil-time-heading">A place is more than an offset.</h2>
+  </div>
+
+  <div class="civil-time-grid">
+    <div class="method-copy">
+      <p>Civil time is the local time used in everyday life, set by governments through time-zone and daylight-saving rules. It is shaped by policy as much as geography. A place’s offset from UTC can vary by season, and its rules can change over time or with little notice.</p>
+      <p>Atlas Time identifies each city with a time-zone identifier from the Internet Assigned Numbers Authority (IANA) Time Zone Database (for example, <code>America/Chicago</code> or <code>Asia/Kathmandu</code>) rather than a fixed offset from UTC. For the exact instant shown on the map, the app calculates the applicable UTC offset, zone abbreviation, local date, and daylight-saving state.</p>
+    </div>
+
+    <div class="civil-time-notes">
+      <section aria-labelledby="time-zone-testing-heading">
+        <h3 id="time-zone-testing-heading">Testing the edges of civil time.</h3>
+        <p>Tests cover skipped and repeated local times, southern-hemisphere seasons, UTC offsets in 30- and 45-minute increments, Lord Howe Island’s 30-minute daylight-saving change, Morocco’s 2026 Ramadan adjustment, and historical rule changes.</p>
+        <p>Kiritimati (UTC+14) and Pago Pago (UTC−11) make the distinction especially visible. At the same instant, their displayed local times are 25 hours apart: their clock times differ by one hour, while the International Date Line places them on different calendar dates. Yet the two places are only about 13° apart in longitude, so they experience sunrise roughly an hour apart in elapsed time, with some seasonal variation. The 25-hour difference comes from civil time, not a comparable physical distance around Earth.</p>
+      </section>
+      <section aria-labelledby="calculation-boundary-heading">
+        <h3 id="calculation-boundary-heading">Calculation boundary</h3>
+        <p>Atlas Time performs these calculations on device using the time-zone rules installed with iOS. The bundled city catalog identifies each place; iOS evaluates the civil-time rules that apply at the selected instant. Because governments can revise those rules, future results depend on the time-zone data available on the device.</p>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="catalog-section section-shell" aria-labelledby="city-catalog-heading">
+  <div class="section-intro">
+    <p class="eyebrow">Offline database</p>
+    <h2 id="city-catalog-heading">The city catalog.</h2>
+  </div>
+
+  <div class="catalog-grid">
+    <div class="method-copy">
+      <p>City search does not call a web service. Atlas Time carries a curated catalog of 6,650 searchable cities and 312 representative IANA time zones. It includes coordinates, alternate names, and country and region information used to identify each place and position its beacon.</p>
+      <p>No single source contains all of this information. IANA supplies canonical time-zone identities; the Unicode Common Locale Data Repository (CLDR) supplies familiar time-zone names and aliases; GeoNames supplies places and alternate names; and Natural Earth supplies capital status, geographic importance, and city coordinates. Retrieval dates are recorded for every input, and each source is used in accordance with its license in the app’s database.</p>
+    </div>
+
+    <div class="catalog-notes">
+      <section aria-labelledby="curated-data-heading">
+        <h3 id="curated-data-heading">The curated data set</h3>
+        <p>An early import produced 34,117 records, including neighborhoods and localities that made city search noisier rather than more useful. Atlas Time’s curation algorithm retains capitals, major cities, recognized Natural Earth places, and at least one representative for every canonical geographic time zone. The resulting catalog contains 6,650 cities while preserving all 312 representative zones.</p>
+      </section>
+      <section aria-labelledby="optimized-search-heading">
+        <h3 id="optimized-search-heading">Optimized search</h3>
+        <p>Geographic importance, capital status, and population all factor into search ranking alongside exact-name matches, so Chicago appears before Chicago Lawn and London in the United Kingdom before London, Ontario. Search also recognizes alternate names, IANA identifiers, and familiar time-zone terms, and works with or without accent marks (for example, São Paulo or Sao Paulo).</p>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="download-section section-shell" aria-labelledby="download-atlas-time-heading">
+  <div class="download-cta">
+    <div>
+      <p class="eyebrow">Available now</p>
+      <h2 id="download-atlas-time-heading">Keep the world in view.</h2>
+      <p>Download Atlas Time for iPhone and iPad.</p>
+    </div>
+    <a class="app-store-link about-app-store-link" href="https://apps.apple.com/us/app/atlas-time/id6796547372" aria-label="Download Atlas Time on the App Store">
+      <img src="/assets/app-store/download-on-the-app-store.svg" alt="Download on the App Store">
+    </a>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+  <div>
+    <a class="footer-brand" href="/" aria-label="Atlas Time home">
+      <picture>
+        <source media="print" srcset="/assets/brand/AtlasTimeWordmark-Light.svg">
+        <img src="/assets/brand/AtlasTimeWordmark-Dark.svg" alt="">
+      </picture>
+    </a>
+    <p>A visual world clock for iPhone and iPad, designed and developed by Howard Patty.</p>
+
+    <a class="app-store-link footer-app-store-link" href="https://apps.apple.com/us/app/atlas-time/id6796547372" aria-label="Download Atlas Time on the App Store">
+      <img src="/assets/app-store/download-on-the-app-store.svg" alt="Download on the App Store">
+    </a>
+  </div>
+  <nav aria-label="Sitemap">
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/support/">Support</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/terms/">Terms</a>
+    <a href="/credits/">Credits</a>
+  </nav>
+  <p class="copyright">© 2026 Howard Patty</p>
+</div>
+  </footer>
+  
+</body>
+</html>
